@@ -1,0 +1,51 @@
+# String Variable
+myself: lala
+fruit: "apple"
+job: 'swe'
+
+bio: |
+hey my name is siddhant.
+i am a very nice dude.
+
+# Write a single line i multiple lines
+message: >
+this will
+all be
+in one single line
+
+# Same as
+message: !!str this will all be in one single line
+
+
+number: 5473
+marks: 98.76
+booleanValue: !!bool No
+# for flase you can use: n,N,false,False,FALSE
+# for true you can use: y,Y,yes,Yes,YES
+
+
+# Specify the type
+zero: !!int 0
+positiveNum: !!int 45
+negativeNum: !!int -45
+binaryNum: !!int 0b11001
+octalNum: !!int 06574
+hexa: !!int 0x45
+commaValue: !!int +540_000 # 500,000
+exponential numbers: 6.023E56
+
+
+# Floating point numbers 
+marks: !!float 56.89
+infinite: !!float .inf
+not a num: .nan
+
+
+# Null
+surname: !!null Null #or null Null ~
+~: this is a null key
+
+# Dates and time i yaml
+date: !!timestamp2002-12-14 
+india time: 2001-12-15T02:59:43.10 +5:30
+no time zone: 2001-12-15t02:59:43.10
